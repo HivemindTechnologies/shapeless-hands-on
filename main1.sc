@@ -24,7 +24,7 @@ implicit val orderDecoder: CsvDecoder[Order] = _ match {
   case _ => None
 }
 
-val orderLine = List("1COc2", "8HHY1", "Market Price", "2020-07-16T00:00:00.206502171Z", "Quote", "28.8", "13", "28.81", "2", "TTZ[MKT_ST_IND]")
+val orderLine = List("sahC9aiw", "OoZ8beQu", "Price", "2020-07-16T00:00:00.206502171Z", "Quote", "28.8", "13", "28.81", "2", "TTR[eech9Ach]")
 
 println(orderLine.decode[Order])
 
