@@ -1,0 +1,23 @@
+// scala 2.13.3
+
+val orderCsv: String = """#RIC,Alias Underlying RIC,Domain,Date-Time,Type,Bid Price,Bid Size,Ask Price,Ask Size,Qualifiers
+1COc2,8HHY1,Market Price,2020-07-16T00:00:00.206502171Z,Quote,28.8,13,28.81,2,TTZ[MKT_ST_IND]
+1COc2,8HHY1,Market Price,2020-07-16T00:00:00.246484865Z,Quote,28.9,12,28.81,2,TTZ[MKT_ST_IND]
+1COc2,8HHY1,Market Price,2020-07-16T00:00:00.250905514Z,Quote,28.8,12,28.85,5,TTZ[MKT_ST_IND]
+1COc2,8HHY1,Market Price,2020-07-16T00:00:00.274905820Z,Quote,28.8,21,28.85,5,TTZ[MKT_ST_IND]
+1COc2,8HHY1,Market Price,2020-07-16T00:00:00.278497273Z,Quote,28.9,23,28.85,5,TTZ[MKT_ST_IND]"""
+
+val tradeCsv: String = """#RIC,Alias Underlying RIC,Domain,Date-Time,Type,Price,Volume,Qualifiers
+1XOa2,1GBQ6,Market Price,2020-07-16T00:00:00.114550158Z,Trade,28.8,3,"IO[ACT_TP_5];   [LIMIT_IND];""     ""[AGGRS_SID8]"
+1XOa2,1GBQ6,Market Price,2020-07-16T00:00:00.190916365Z,Trade,28.8,14,"  [ACT_TP_5];   [LIMIT_IND];""     ""[AGGRS_SID8]"
+1XOa2,1GBQ6,Market Price,2020-07-16T00:00:00.250581869Z,Trade,28.81,2,"^[ACT_TP_5];   [LIMIT_IND];""BID  ""[AGGRS_SID8]"
+1XOa2,1GBQ6,Market Price,2020-07-16T00:00:00.250581869Z,Trade,28.82,3,"^[ACT_TP_5];   [LIMIT_IND];""BID  ""[AGGRS_SID8]"
+1XOa2,1GBQ6,Market Price,2020-07-16T00:00:00.250581869Z,Trade,28.83,2,"^[ACT_TP_5];   [LIMIT_IND];""BID  ""[AGGRS_SID8]"
+"""
+
+val productHighCloseCsv: String = """RIC,Trade Date,High,Low
+TTPYc4,2020/07/18,,
+TTPYc3,2020/07/18,51.75,58.75
+BGMBQc1,2020/07/18,11.5,10.32
+BGMBQc2,2020/07/18,16.79,12.67
+RRUc3,2020/07/18,351.3,345.6"""
